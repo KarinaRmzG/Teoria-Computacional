@@ -1,0 +1,250 @@
+Created by PLY version 3.11 (http://www.dabeaz.com/ply)
+
+Grammar
+
+Rule 0     S' -> S
+Rule 1     S -> a S d
+Rule 2     S -> A
+Rule 3     S -> B
+Rule 4     A -> A d
+Rule 5     A -> C
+Rule 6     B -> a B c
+Rule 7     B -> a B
+Rule 8     B -> C
+Rule 9     C -> b C c
+Rule 10    C -> b C
+Rule 11    C -> empty
+Rule 12    empty -> <empty>
+
+Terminals, with rules where they appear
+
+a                    : 1 6 7
+b                    : 9 10
+c                    : 6 9
+d                    : 1 4
+error                : 
+
+Nonterminals, with rules where they appear
+
+A                    : 2 4
+B                    : 3 6 7
+C                    : 5 8 9 10
+S                    : 1 0
+empty                : 11
+
+Parsing method: LALR
+
+state 0
+
+    (0) S' -> . S
+    (1) S -> . a S d
+    (2) S -> . A
+    (3) S -> . B
+    (4) A -> . A d
+    (5) A -> . C
+    (6) B -> . a B c
+    (7) B -> . a B
+    (8) B -> . C
+    (9) C -> . b C c
+    (10) C -> . b C
+    (11) C -> . empty
+    (12) empty -> .
+
+    a               shift and go to state 2
+    b               shift and go to state 6
+    d               reduce using rule 12 (empty -> .)
+    $end            reduce using rule 12 (empty -> .)
+
+    S                              shift and go to state 1
+    A                              shift and go to state 3
+    B                              shift and go to state 4
+    C                              shift and go to state 5
+    empty                          shift and go to state 7
+
+state 1
+
+    (0) S' -> S .
+
+
+
+state 2
+
+    (1) S -> a . S d
+    (6) B -> a . B c
+    (7) B -> a . B
+    (1) S -> . a S d
+    (2) S -> . A
+    (3) S -> . B
+    (6) B -> . a B c
+    (7) B -> . a B
+    (8) B -> . C
+    (4) A -> . A d
+    (5) A -> . C
+    (9) C -> . b C c
+    (10) C -> . b C
+    (11) C -> . empty
+    (12) empty -> .
+
+    a               shift and go to state 2
+    b               shift and go to state 6
+    c               reduce using rule 12 (empty -> .)
+    $end            reduce using rule 12 (empty -> .)
+    d               reduce using rule 12 (empty -> .)
+
+    S                              shift and go to state 8
+    B                              shift and go to state 9
+    A                              shift and go to state 3
+    C                              shift and go to state 10
+    empty                          shift and go to state 7
+
+state 3
+
+    (2) S -> A .
+    (4) A -> A . d
+
+  ! shift/reduce conflict for d resolved as shift
+    $end            reduce using rule 2 (S -> A .)
+    d               shift and go to state 11
+
+  ! d               [ reduce using rule 2 (S -> A .) ]
+
+
+state 4
+
+    (3) S -> B .
+
+    $end            reduce using rule 3 (S -> B .)
+
+
+state 5
+
+    (5) A -> C .
+    (8) B -> C .
+
+  ! reduce/reduce conflict for $end resolved using rule 5 (A -> C .)
+    d               reduce using rule 5 (A -> C .)
+    $end            reduce using rule 5 (A -> C .)
+
+  ! $end            [ reduce using rule 8 (B -> C .) ]
+
+
+state 6
+
+    (9) C -> b . C c
+    (10) C -> b . C
+    (9) C -> . b C c
+    (10) C -> . b C
+    (11) C -> . empty
+    (12) empty -> .
+
+    b               shift and go to state 6
+    c               reduce using rule 12 (empty -> .)
+    d               reduce using rule 12 (empty -> .)
+    $end            reduce using rule 12 (empty -> .)
+
+    C                              shift and go to state 12
+    empty                          shift and go to state 7
+
+state 7
+
+    (11) C -> empty .
+
+    d               reduce using rule 11 (C -> empty .)
+    $end            reduce using rule 11 (C -> empty .)
+    c               reduce using rule 11 (C -> empty .)
+
+
+state 8
+
+    (1) S -> a S . d
+
+    d               shift and go to state 13
+
+
+state 9
+
+    (6) B -> a B . c
+    (7) B -> a B .
+    (3) S -> B .
+
+  ! shift/reduce conflict for c resolved as shift
+  ! reduce/reduce conflict for d resolved using rule 3 (S -> B .)
+    c               shift and go to state 14
+    $end            reduce using rule 7 (B -> a B .)
+    d               reduce using rule 3 (S -> B .)
+
+  ! c               [ reduce using rule 7 (B -> a B .) ]
+  ! d               [ reduce using rule 7 (B -> a B .) ]
+
+
+state 10
+
+    (8) B -> C .
+    (5) A -> C .
+
+  ! reduce/reduce conflict for d resolved using rule 5 (A -> C .)
+    c               reduce using rule 8 (B -> C .)
+    $end            reduce using rule 8 (B -> C .)
+    d               reduce using rule 5 (A -> C .)
+
+  ! d               [ reduce using rule 8 (B -> C .) ]
+
+
+state 11
+
+    (4) A -> A d .
+
+    d               reduce using rule 4 (A -> A d .)
+    $end            reduce using rule 4 (A -> A d .)
+
+
+state 12
+
+    (9) C -> b C . c
+    (10) C -> b C .
+
+  ! shift/reduce conflict for c resolved as shift
+    c               shift and go to state 15
+    d               reduce using rule 10 (C -> b C .)
+    $end            reduce using rule 10 (C -> b C .)
+
+  ! c               [ reduce using rule 10 (C -> b C .) ]
+
+
+state 13
+
+    (1) S -> a S d .
+
+    $end            reduce using rule 1 (S -> a S d .)
+    d               reduce using rule 1 (S -> a S d .)
+
+
+state 14
+
+    (6) B -> a B c .
+
+    $end            reduce using rule 6 (B -> a B c .)
+    c               reduce using rule 6 (B -> a B c .)
+    d               reduce using rule 6 (B -> a B c .)
+
+
+state 15
+
+    (9) C -> b C c .
+
+    d               reduce using rule 9 (C -> b C c .)
+    $end            reduce using rule 9 (C -> b C c .)
+    c               reduce using rule 9 (C -> b C c .)
+
+WARNING: 
+WARNING: Conflicts:
+WARNING: 
+WARNING: shift/reduce conflict for d in state 3 resolved as shift
+WARNING: shift/reduce conflict for c in state 9 resolved as shift
+WARNING: shift/reduce conflict for c in state 12 resolved as shift
+WARNING: reduce/reduce conflict in state 5 resolved using rule (A -> C)
+WARNING: rejected rule (B -> C) in state 5
+WARNING: reduce/reduce conflict in state 9 resolved using rule (S -> B)
+WARNING: rejected rule (B -> a B) in state 9
+WARNING: reduce/reduce conflict in state 10 resolved using rule (A -> C)
+WARNING: rejected rule (B -> C) in state 10
