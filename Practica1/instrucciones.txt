@@ -1,0 +1,134 @@
+1. Escriba un programa de Python para calcular la longitud de una cadena.
+ 
+2. Escriba un programa de Python para contar el n?mero de caracteres (frecuencia de caracteres) en una cadena.
+Cadena de ejemplo: ?google.com '
+Resultado previsto: {'o': 3, 'g': 2, '': 1, 'e': 1, 'l': 1, 'm': 1, 'c': 1}
+
+3. Escriba un programa de Python para obtener una cadena hecha de los 2 primeros y los 2 ?ltimos caracteres de una determinada cadena. Si la longitud de cadena es menor que 2, devuelve la cadena vac?a.
+Cadena de ejemplo: 'w3resource'
+Resultado Esperado: 'w3ce'
+Cadena de ejemplo: 'w3'
+Resultado Esperado: 'w3w3'
+Cadena de ejemplo: 'w'
+Resultado esperado: '' (Cadena vac?a)
+
+4. Escriba un programa de Python para obtener una cadena de una cadena dada, donde todas las apariciones de su primer car?cter se han cambiado a '$', excepto el propio primer car?cter.
+Cadena de ejemplo: 'regresar'
+Resultado esperado: 'reg$esa$'
+
+5. Escriba un programa de Python para obtener una sola cadena de dos cadenas dadas, separadas por un espacio, adem?s de intercambiar los dos primeros caracteres de cada cadena.
+Cadenas de ejemplo: 'abc', 'xyz'
+Resultado Esperado: 'xyc abz'
+
+6. Escribe una funci?n de Python que tome una lista de palabras y devuelva la longitud de la m?s larga.
+
+7. Escriba un programa de Python para quitar el car?cter de una posici?n dada de una cadena no vac?a.
+ 
+8. Escriba un programa de Python para cambiar una cadena dada a una nueva cadena donde se intercambiaron los caracteres primero y ?ltimo.
+ 
+9. Escriba un programa de Python para eliminar los caracteres que tienen valores de ?ndice impar de una cadena dada.
+ 
+10. Escriba un programa de Python para contar las ocurrencias de cada palabra en una oraci?n determinada.
+
+11. Escriba un script de Python que tome la entrada del usuario y muestre esa entrada de nuevo en solo may?sculas y solo min?sculas.
+
+12. Escriba un programa de Python que acepte una secuencia de palabras separada por comas como entrada e imprima las palabras en forma ordenada (alfanum?ricamente).
+
+13. Escriba una funci?n Python para obtener una cadena de 4 copias de los dos ?ltimos caracteres de una cadena especificada (la longitud debe ser al menos 2).
+Funci?n y resultado de la muestra:
+Insert_end ('Python') -> onononon
+Insert_end ('Ejercicio') -> ioioioio
+
+14. Escriba una funci?n de Python para obtener una cadena hecha de los primeros tres caracteres de una cadena especificada. Si la longitud de la cadena es menor que 3, devuelva la cadena original.
+Funci?n y resultado de la muestra:
+First_three ('ipy') -> ipy
+First_three ('python') -> pyt
+
+15. Escriba una funci?n Python para obtener la primera mitad de una cadena especificada de longitud par.
+Funci?n y resultado de la muestra:
+String_first_half ('Python') -> Pyt
+
+16. Escriba una funci?n Python para invertir una cadena si su longitud es un m?ltiplo de la suma de los tres ?ltimos d?gitos de su No. de Boleta.
+
+17. Escriba una funci?n Python para convertir una cadena dada en may?sculas si contiene al menos 2 caracteres en may?sculas en los primeros 4 caracteres.
+
+18. Escriba un programa de Python para ordenar una cadena lexicogr?ficamente.
+Ejemplo: 'xawm' -> 'amwx' 
+
+19. Escriba un programa de Python para comprobar si una cadena comienza con caracteres especificados.
+
+20. Escriba un programa de Python para crear un cifrado de C?sar.
+
+Nota: En criptograf?a, una cifra de C?sar, tambi?n conocida como la cifra de C?sar, la cifra de cambio, el c?digo de C?sar o el cambio de C?sar, es una de las t?cnicas de cifrado m?s sencillas y conocidas. Es un tipo de cifrado de sustituci?n en el que cada letra en el texto plano se sustituye por una letra de un n?mero fijo de posiciones por el alfabeto. Por ejemplo, con un desplazamiento a la izquierda de 3, D ser?a reemplazado por A, E se convertir?a en B, y as? sucesivamente. El m?todo lleva el nombre de Julio C?sar, que lo utiliz? en su correspondencia privada.
+
+21. Escriba un programa Python para agregar un prefijo a todas las l?neas de una cadena multil?nea.
+
+22. Escriba un programa Python para imprimir n?meros flotantes hasta 2 decimales. 
+
+23. Escriba un programa Python para imprimir n?meros flotantes hasta 2 decimales con un signo.
+
+24. Escriba un programa de Python para imprimir n?meros flotantes sin decimales. 
+
+25. Escriba un programa Python para imprimir enteros con ceros a la izquierda hasta un ancho especificado. 
+
+26. Escribe un programa Python para imprimir los siguientes n?meros enteros con '*' a la derecha del ancho especificado. 
+
+27. Escriba un programa de Python para mostrar un n?mero con comas como separadores.
+Ejemplo: 30000000 -> 30,000,000 
+
+28. Escriba un programa de Python para formatear un n?mero con formato de porcentaje. 
+
+29. Escriba un programa de Python para mostrar un n?mero en alineaci?n izquierda, derecha y central alineados en ancho 10. 
+Ejemplo:
+Original:  22                              
+Izq (ancho 10)  :22                     
+Der (ancho 10)  :        22             
+Cen (ancho 10)  :    22   
+
+30. Escriba un programa en Python que coloque tres n?meros en el rango (0,256) en una cadena hexadecimal que inicie con '#' (Formato RGB de Python TkInter).
+Ejemplo: 
+(64, 204, 208) -> '#40ccd0'
+
+31. Escriba un programa Python para contar las ocurrencias de una subcadena en una cadena. 
+
+32. Escriba un programa de Python para invertir palabras en una cadena. 
+
+33. Escriba un programa de Python para quitar un conjunto de caracteres de una cadena. 
+Ejemplo:
+quitar_caracteres("institucional","aeiou") -> 'nsttcnl'
+
+34. Escriba el programa de Python para contar los caracteres repetidos en una cadena. 
+Cadena de ejemplo: 'thequickbrownfoxjumpsoverthelazydog'
+Resultado esperado :
+o 4
+e 3
+u 2
+h 2
+r 2
+t 2
+
+35. Escriba un programa Python para imprimir el ?ndice del car?cter en una cadena.
+Cadena de ejemplo: w3resource
+Resultado esperado:
+Car?cter actual w posici?n 0
+Car?cter actual 3 posici?n 1
+Car?cter actual r posici?n 2
+...
+
+36. Escriba un programa Python para comprobar si una cadena contiene todas las letras del alfabeto. 
+
+37. ??Escriba un programa Python para convertir una cadena en una lista. 
+
+38. Escriba un programa Python para poner en min?sculas los primeros n caracteres de una cadena. 
+
+39. Escriba un programa de Python para intercambiar coma y punto en una cadena. 
+Cadena de ejemplo: "32.054,23"
+Resultado esperado: "32,054.23"
+
+40. Escriba un programa Python para contar las vocales de un texto dado. 
+
+41. Escriba un programa de Python para dividir una cadena en la ?ltima aparici?n del delimitador dado. 
+
+42. Escriba un programa Python para obtener la ?ltima parte de una cadena antes de un car?cter especificado. 
+
+43. Escriba un programa en Python que imprima todas las subcadenas de una cadena y que identifique si se trata de un prefijo, un prefijo propio, un sufijo o un sufijo propio. Que tambi?n imprima el n?mero total de subcadenas.

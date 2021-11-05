@@ -1,0 +1,5 @@
+cadena=input("Escribe una cadena: ")
+M=cadena.upper()
+m=cadena.lower()
+print(f"La cadena en mayusculas es : {M}")
+print(f"La cadena en minusculas es : {m}")
